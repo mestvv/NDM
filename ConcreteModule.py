@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 from scipy import interpolate
 
 # Класс для задания физико-механических характеристик бетона

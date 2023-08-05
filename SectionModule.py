@@ -1,8 +1,8 @@
 import numpy as np
 import gmsh
-import sys
 
 
+# Функция для импорта и получения информации о сечении
 def getSectionInfo(file):
     # Инициализация gmsh
     gmsh.initialize()
@@ -87,9 +87,16 @@ def getSectionInfo(file):
     RebarY = RebarX
     RebarX = - RebarY1
 
-    # Закрытие gmsh
-    gmsh.finalize()
-
     return ConcreteTags, ConcreteX, ConcreteY, ConcreteArea, RebarTags, RebarDiam, RebarArea, RebarX, RebarY
 
-getSectionInfo('Section.msh')
+
+# Функция возвращает координаты элементов относительно заданной системы координат
+def getXY(X, Y, ConcreteX, ConcreteY, RebarX, RebarY):
+    ConcreteX = -(X - ConcreteX)
+    ConcreteY = -(Y - ConcreteY)
+    RebarX = -(X - RebarX)
+    RebarY = -(Y - RebarY)
+    return ConcreteX, ConcreteY, RebarX, RebarY
+
+# Закрытие gmsh
+gmsh.finalize()
