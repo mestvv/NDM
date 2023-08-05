@@ -2,7 +2,6 @@ import numpy as np
 import gmsh
 import sys
 from scipy.linalg import solve
-import meshio
 import ConcreteModule
 import RebarModule
 import SectionModule
