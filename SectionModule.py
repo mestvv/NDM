@@ -97,6 +97,3 @@ def getXY(X, Y, ConcreteX, ConcreteY, RebarX, RebarY):
     RebarX = -(X - RebarX)
     RebarY = -(Y - RebarY)
     return ConcreteX, ConcreteY, RebarX, RebarY
-
-# Закрытие gmsh
-gmsh.finalize()

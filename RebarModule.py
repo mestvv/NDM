@@ -42,4 +42,5 @@ class Rebar2L:
 
 # Задаем классы арматуры
 A400 = RebarClass(2e5, 390, 340, 340, 340)
+A400SP52 = RebarClass(2e5, 390, 355, 355, 355)
 A500 = RebarClass(2e5, 500, 435, 435, 400)

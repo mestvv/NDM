@@ -100,3 +100,31 @@ Physical Point("RebarD18", 11) = {10, 9, 11};
 MeshSize {20, 10, 11, 13, 14, 9, 21, 22, 23, 25, 24} = 0.05;
 //+
 MeshSize {25, 9, 24, 23, 22, 21, 20, 14, 13, 11, 10} = 0.01;
+//+
+Rotate {{0, 1, 0}, {0, 0, 0}, 0.24497866312686} {
+  Point{25}; Point{9}; Point{24}; Point{23}; Point{22}; Point{21}; Point{20}; Point{14}; Point{13}; Point{11}; Point{10}; Curve{8}; Curve{7}; Curve{6}; Curve{5}; Curve{4}; Curve{3}; Curve{2}; Curve{1}; Surface{1}; 
+}
+//+
+Rotate {{0, 1, 0}, {0, 0, 0}, -0.24497866312686} {
+  Point{13}; Point{20}; Point{25}; Point{24}; Point{10}; Point{9}; Point{21}; Point{11}; Point{23}; Point{22}; Point{14}; Curve{7}; Curve{8}; Curve{1}; Curve{6}; Curve{4}; Curve{5}; Curve{2}; Curve{3}; Surface{1}; 
+}
+//+
+Rotate {{0, 0, 1}, {0, 0, 0}, 0.24497866312686} {
+  Point{20}; Point{21}; Point{22}; Point{23}; Point{24}; Point{25}; Point{10}; Point{9}; Point{11}; Point{13}; Point{14}; Curve{6}; Curve{7}; Curve{5}; Curve{8}; Curve{4}; Curve{1}; Curve{2}; Curve{3}; Surface{1}; 
+}
+//+
+Rotate {{0, 0, 1}, {0, 0, 0}, -0.24497866312686} {
+  Point{20}; Point{21}; Point{22}; Point{23}; Point{24}; Point{25}; Point{10}; Point{11}; Point{9}; Point{14}; Point{13}; Curve{6}; Curve{5}; Curve{4}; Curve{7}; Curve{8}; Curve{3}; Curve{2}; Curve{1}; Surface{1}; 
+}
+//+
+Rotate {{0, 0, 1}, {0, 0, 0}, -0.24497866312686} {
+  Point{20}; Point{21}; Point{22}; Point{23}; Point{24}; Point{25}; Point{10}; Point{9}; Point{11}; Point{13}; Point{14}; Curve{6}; Curve{7}; Curve{5}; Curve{8}; Curve{4}; Curve{1}; Curve{2}; Curve{3}; Surface{1}; 
+}
+//+
+Rotate {{0, 0, 1}, {0, 0, 0}, 0.24497866312686} {
+  Point{20}; Point{21}; Point{22}; Point{23}; Point{24}; Point{25}; Point{10}; Point{9}; Point{11}; Point{13}; Point{14}; Curve{6}; Curve{7}; Curve{5}; Curve{8}; Curve{4}; Curve{1}; Curve{2}; Curve{3}; Surface{1}; 
+}
+//+
+Rotate {{0, 0, 1}, {0, 0, 0}, -0.2449786629951} {
+  Point{25}; Point{9}; Point{24}; Point{23}; Point{22}; Point{21}; Point{20}; Point{14}; Point{13}; Point{11}; Point{10}; Curve{8}; Curve{7}; Curve{6}; Curve{5}; Curve{4}; Curve{3}; Curve{2}; Curve{1}; Surface{1}; 
+}
