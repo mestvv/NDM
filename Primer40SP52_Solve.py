@@ -1,7 +1,5 @@
-import numpy as np
 import gmsh
 import sys
-from scipy.linalg import solve
 import ConcreteModule
 import RebarModule
 import SectionModule
@@ -21,9 +19,9 @@ sigmab_func = ConcreteModule.KarpenkoTemp(ConcreteMaterial, 20, 1).Design()
 sigmas_func = RebarModule.Rebar2L(RebarMaterial).Design()
 
 # Импорт сечения
-ConcreteTags, ConcreteX, ConcreteY, ConcreteArea, RebarTags, RebarDiam, RebarArea, RebarX, RebarY = SectionModule.getSectionInfo("Section.msh")
+ConcreteTags, ConcreteX, ConcreteY, ConcreteArea, RebarTags, RebarDiam, RebarArea, RebarX, RebarY = SectionModule.getSectionInfo("Primer40SP52.msh")
 
-# Вычисляем координаты элементы относительно заданной системы координат
+# Вычисляем координаты элементов относительно заданной системы координат
 ConcreteX, ConcreteY, RebarX, RebarY = SectionModule.getXY(-0.3, 0.2, ConcreteX, ConcreteY, RebarX, RebarY)
 
 # Запуск алгоритма НДМ
